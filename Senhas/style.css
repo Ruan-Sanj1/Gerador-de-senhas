@@ -4,8 +4,8 @@
     --branco: white;
     --cor-de-fundo: #00162E;
     --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075FF;
+    --fundo-texto: #10335f;
+    --borda: #2e0482;
     --fonte: "Roboto", sans-serif;
     --fonte2: "Roboto Mono", monospace;
 }
@@ -29,3 +29,153 @@ body{
     text-align: center;
     margin-top: 80px;
 }
+
+.conteudo-senha{
+    margin-top: 80px;
+    /*Espaço entre o texto e a senha*/
+    background: var(--fundo-senha);
+    /*Cor de fundo da senha*/
+    padding: 24px;
+    /*Espaço dentro do campo da senha*/
+    border-bottom: 6px solid var(--borda);
+    /*Borda de baixo*/
+}
+
+#campo-senha{
+    /*A # chama uma identificação, um ID*/
+    background-color: var(--fundo-senha);
+    /*Fundo da mesma cor que o campo em volta*/
+    border: none;
+    /*Sem borda pra fungir que faz parte do campo ao redor*/
+    color: var(--branco);
+    font-family: var(--fonte);
+    font-size: 40px;
+    /*Tamanho do campo para a digitação*/
+    width:93%;
+}
+
+#campo-senha:focus{
+    /*Comportamento do campo quando estiver em foco*/
+    outline: none;
+}
+
+.conteudo{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parametro{
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    /*Largura, tipo e cor da borda*/
+    margin-top: 32px;
+    /*Espaço vazio pra cima dos parâmetros*/
+    padding: 24px;
+    /*Espaçamento interno*/
+}
+
+.parametro-titulo{
+    font-family: var(--fonte2);
+    font-size: 28px;
+}
+
+.parametro-senha{
+    width: 50%;
+    margin: 0 auto; 
+}
+
+.parametro-senha-titulo{
+    font-size:24px;
+}
+
+.parametro-coluna-senha{
+    display: flex;
+    flex-direction: row;
+    /*Elementos posicionados em "sequência"*/
+    justify-content: center;
+    /*Centralizados*/
+}
+
+
+.parametro-senha-botoes{
+    display: flex;
+    /*Pra que um fique do lado do outro*/
+    justify-content: center;
+}
+
+.parametro-senha-texto{
+    padding: 24px;
+    /*Espaço em volta do número 12*/
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    /*Bordas de cima e de baixo*/
+    margin: 0;
+    /*Tira a margem em volta, para que os elementos fiquem alinhados*/
+}
+
+.parametro-senha-botao{
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    /*Borda em volta de tudo*/
+    padding: 24px;
+    /*Espaço dentro do botão*/
+    font-size: 24px;
+    cursor: pointer;
+    /*O cursor vai virar mão em cima desse*/
+}
+
+label{
+    font-size: 20px;
+}
+
+.checkbox{
+    width: 20px;
+    /*Largura e altura da caixa de seleção*/
+    height: 20px;
+    /*Devem ser iguais, testa o que acontece se não forem*/
+    cursor: pointer;
+}
+
+.barra{
+    background-color: var(--fundo-senha);
+    height: 30px;
+    width: 100%;
+}
+
+.fraca{
+    height: 30px;
+    width: 25%;
+    background-color: #E71B32;
+    position: relative;
+    /*Faz com que a posição do elemento 
+    seja relativa, ou seja, possa ser 
+    mudada livremente*/
+    bottom: 30px;
+    /*Coloca 30px de espaço em baixo
+    do elemento, e como ele é relativo
+    ele vai subir*/
+}
+
+.media{
+    height: 30px;
+    width: 50%;
+    background-color: rgb(255, 255, 58);
+    position: relative;
+    bottom: 30px;
+}
+
+.forte{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(54, 255, 54);
+    position: relative;
+    bottom: 30px;
+}
+
+
+.parametro-senha-textos{
+    display:flex;
+    justify-content: space-between;
+}
+
